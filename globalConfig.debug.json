@@ -1,0 +1,44 @@
+{
+  "code": 200,
+  "msg": "SUCCESS",
+  "error": "成功",
+  "data": {
+    "shareReward": {
+      "enabled": false,
+      "triggerPlayCount": 20
+    },
+    "appVersion": "1.1.3",
+    "playListImportSupport": "YouTube",
+    "isOwnContentTest": false,
+    "eventSamplingRate": 0,
+    "adsControlByServer": true,
+    "useNewJs": true,
+    "jsInfo": {
+      "jsLink": "https://vibeflowplayer.com/extractor_V260602_1.js",
+      "versionWhitelist": [
+        "1.0",
+        "1.1",
+        "1.1.1",
+        "1.1.2",
+        "1.1.3",
+        "1.1.4",
+        "1.1.5",
+        "1.1.6",
+        "26.4.1",
+        "26.4.2",
+        "26.5.1",
+        "26.5.2",
+        "26.6.4"
+      ],
+      "jsVersion": "1.29",
+      "isEncrypted": true,
+      "encryptionKey": "t/JNtGy4A7drQZB9qwZ7RZdWYTiarkzt76yPHp4EoFw="
+    },
+    "useJsParser": true,
+    "adsTimeInterval": 5,
+    "downloadAdsInterval": 2,
+    "adDisplayChance": 0.0,
+    "isOwnContent": false,
+    "spPlayListImportSupport": "Spotify"
+  }
+}
