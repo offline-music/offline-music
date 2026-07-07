@@ -3,38 +3,6 @@
   "msg": "SUCCESS",
   "error": "成功",
   "data": {
-    "shareReward": {
-      "enabled": false,
-      "triggerPlayCount": 20
-    },
-    "appVersion": "26.6.5",
-    "playListImportSupport": "YouTube",
-    "isOwnContentTest": false,
-    "eventSamplingRate": 0,
-    "adsControlByServer": true,
-    "useNewJs": true,
-    "jsInfo": {
-      "jsLink": "https://vibeflowplayer.com/extractor_V260602_1.js",
-      "versionWhitelist": [
-        "1.1",
-        "26.4.1",
-        "26.4.2",
-        "26.5.1",
-        "26.5.2",
-        "26.6.1",
-        "26.6.2",
-        "26.6.4",
-        "26.6.5"
-      ],
-      "jsVersion": "1.8",
-      "isEncrypted": true,
-      "encryptionKey": "t/JNtGy4A7drQZB9qwZ7RZdWYTiarkzt76yPHp4EoFw="
-    },
-    "useJsParser": true,
-    "adsTimeInterval": 3,
-    "downloadAdsInterval": 4,
-    "adDisplayChance": 0.0,
-    "isOwnContent": false,
-    "spPlayListImportSupport": "Spotify"
+    "appVersion": "1.0"
   }
 }
