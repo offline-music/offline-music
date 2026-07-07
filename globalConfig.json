@@ -3,6 +3,6 @@
   "msg": "SUCCESS",
   "error": "成功",
   "data": {
-    "appVersion": "1.0"
+    "currentVersion": "1.0"
   }
 }
