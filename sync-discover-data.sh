@@ -13,12 +13,5 @@ curl -sS \
   | format_json \
   > "${ROOT_DIR}/musicHome.json"
 
-curl -sS \
-  -H "x-platform: android_debug" \
-  "https://music.vibeflowplayer.com/test-vibeflow-api/fapi/resources?type=musicHome" \
-  | format_json \
-  > "${ROOT_DIR}/musicHome.debug.json"
-
 echo "Updated:"
 echo "  ${ROOT_DIR}/musicHome.json"
-echo "  ${ROOT_DIR}/musicHome.debug.json"
