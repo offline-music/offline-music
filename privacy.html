@@ -1,144 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Offline Music</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #6366f1;
-            --bg-color: #0f172a;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-            --glass-bg: rgba(30, 41, 59, 0.7);
-            --glass-border: rgba(255, 255, 255, 0.1);
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        .container { max-width: 900px; margin: 0 auto; padding: 4rem 2rem; }
-        header { text-align: center; margin-bottom: 4rem; animation: fadeInDown 0.8s ease-out; }
-        h1 {
-            font-size: 3.5rem; font-weight: 800;
-            background: var(--accent-gradient);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-            background-clip: text; margin-bottom: 1rem; letter-spacing: -0.025em;
-        }
-        .subtitle { font-size: 1.25rem; color: var(--text-secondary); }
-        .content-card {
-            background: var(--glass-bg); backdrop-filter: blur(12px);
-            border: 1px solid var(--glass-border); border-radius: 24px;
-            padding: 3rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease;
-        }
-        .content-card:hover { transform: translateY(-5px); }
-        .policy-content h2 { margin: 2.5rem 0 1rem; color: var(--text-primary); font-size: 1.75rem; }
-        .policy-content p { margin-bottom: 1.5rem; color: var(--text-secondary); }
-        .policy-content ul { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--text-secondary); }
-        .policy-content li { margin-bottom: 0.5rem; }
-        .policy-content a { color: var(--primary-color); }
-        footer { text-align: center; margin-top: 6rem; color: var(--text-secondary); font-size: 0.875rem; }
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @media (max-width: 640px) {
-            h1 { font-size: 2.5rem; }
-            .content-card { padding: 1.5rem; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · Aurora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #12141a;
+      --muted: #5c6570;
+      --paper: #f4f7f5;
+      --panel: #ffffff;
+      --line: #d7e0da;
+      --accent: #1f9a4a;
+      --accent-soft: #e7f6ec;
+      --accent-deep: #146b34;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Manrope", system-ui, sans-serif;
+      background:
+        radial-gradient(900px 420px at 8% -10%, rgba(31, 154, 74, 0.12), transparent 60%),
+        radial-gradient(700px 360px at 100% 0%, rgba(18, 20, 26, 0.04), transparent 55%),
+        var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    a { color: var(--accent-deep); text-underline-offset: 3px; }
+    a:hover { color: var(--accent); }
+    .shell {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 2rem;
+    }
+    .side {
+      position: sticky;
+      top: 1.5rem;
+      align-self: start;
+    }
+    .brand {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+    }
+    .side-meta {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      padding: 1rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+    .nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.92rem;
+      padding: 0.35rem 0.55rem;
+      border-radius: 8px;
+    }
+    .nav a:hover,
+    .nav a.active {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+    }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 2.2rem 2rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 12px 40px rgba(18, 20, 26, 0.04);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+      background: var(--accent-soft);
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.85rem;
+    }
+    .lede {
+      max-width: 58ch;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .doc {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 0.5rem 0;
+      overflow: hidden;
+    }
+    section {
+      padding: 1.6rem 2rem;
+      border-bottom: 1px solid var(--line);
+    }
+    section:last-child { border-bottom: none; }
+    h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+      display: flex;
+      gap: 0.7rem;
+      align-items: baseline;
+    }
+    h2 .num {
+      color: var(--accent);
+      font-family: "Manrope", sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      min-width: 1.8rem;
+    }
+    p { color: var(--muted); margin-bottom: 0.9rem; }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      margin: 0.4rem 0 0.9rem;
+      padding-left: 1.15rem;
+      color: var(--muted);
+    }
+    li { margin: 0.35rem 0; }
+    li strong { color: var(--ink); font-weight: 600; }
+    .callout {
+      margin-top: 0.9rem;
+      padding: 0.95rem 1rem;
+      border-left: 3px solid var(--accent);
+      background: var(--accent-soft);
+      border-radius: 0 12px 12px 0;
+      color: var(--ink);
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 860px) {
+      .shell { grid-template-columns: 1fr; }
+      .side { position: static; }
+      .nav { flex-direction: row; flex-wrap: wrap; }
+      .hero, section { padding-left: 1.25rem; padding-right: 1.25rem; }
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <a href="index.html" style="text-decoration: none; color: var(--text-secondary); margin-bottom: 2rem; display: inline-block;">← Back to Home</a>
-            <h1>Privacy Policy</h1>
-            <p class="subtitle">Last Updated: July 6, 2026</p>
-        </header>
+  <div class="shell">
+    <aside class="side">
+      <div class="brand">Aurora</div>
+      <p class="side-meta">Legal · Privacy</p>
+      <nav class="nav" aria-label="On this page">
+        <a href="#scope">Scope</a>
+        <a href="#data">What we process</a>
+        <a href="#local">On-device data</a>
+        <a href="#online">Online features</a>
+        <a href="#partners">Service partners</a>
+        <a href="#security">Security</a>
+        <a href="#children">Children</a>
+        <a href="#choices">Your choices</a>
+        <a href="#contact">Contact</a>
+        <a href="terms.html">Terms of Service →</a>
+      </nav>
+    </aside>
 
-        <main class="content-card policy-content">
-            <section>
-                <h2>🔒 Our Privacy Commitment</h2>
-                <p>Offline Music ("we", "us", or "our") respects your privacy. We are committed to protecting your data and maintaining transparency. This Privacy Policy explains how we handle information when you use our music player application.</p>
-            </section>
+    <div>
+      <header class="hero">
+        <div class="eyebrow">Effective · Aug 11, 2026</div>
+        <h1>Privacy Policy</h1>
+        <p class="lede">
+          This page explains how Aurora handles information while you discover music,
+          stream tracks, manage playlists, and keep songs in Offline Space.
+        </p>
+      </header>
 
-            <section>
-                <h2>1. Introduction</h2>
-                <p>Offline Music is a music player application focused on offline playback, playlist management, and a smooth listening experience. By using Offline Music, you agree to the practices described in this policy.</p>
-            </section>
+      <main class="doc">
+        <section id="scope">
+          <h2><span class="num">01</span>Scope of this policy</h2>
+          <p>
+            Aurora is an Android music app for browsing and searching songs online,
+            streaming playback, building playlists and favorites, importing playlists
+            from supported platforms, and saving tracks for offline listening.
+          </p>
+          <p>
+            Main features work without creating an account. By continuing to use Aurora,
+            you acknowledge the practices described here.
+          </p>
+        </section>
 
-            <section>
-                <h2>2. Information We Collect and Process</h2>
-                <p>Offline Music is designed to minimize data collection. Depending on how you use the app, we may process limited information such as:</p>
-                <ul>
-                    <li><strong>Usage and Technical Data:</strong> We may receive crash diagnostics, analytics events, device model, operating system version, and app performance data through our service providers.</li>
-                    <li><strong>Locally Stored Preferences:</strong> Playback history, app settings, and similar preferences may be stored on your device.</li>
-                </ul>
-                <p>We do not intentionally collect sensitive personal information, payment card details, contacts, precise location data, microphone recordings, or camera recordings for core app operation.</p>
-            </section>
+        <section id="data">
+          <h2><span class="num">02</span>What we process</h2>
+          <p>We keep collection limited. Depending on how you use the app, we may process:</p>
+          <ul>
+            <li><strong>Technical signals</strong> — device type, OS version, app version, language, and basic performance or crash indicators.</li>
+            <li><strong>Analytics events</strong> — aggregated usage events in release builds (for example via Firebase Analytics) to understand stability and feature adoption.</li>
+            <li><strong>Request metadata</strong> — when online features run, standard network details needed to fulfill search, stream, lyrics, config, or import requests.</li>
+            <li><strong>Feedback you send</strong> — message text and lightweight device context if you reach out through in-app feedback.</li>
+          </ul>
+          <div class="callout">
+            We do not ask for payment card data, contacts, precise location, camera, or microphone access for core playback.
+          </div>
+        </section>
 
-            <section>
-                <h2>3. User Content</h2>
-                <p>Offline Music plays music files stored locally on your device. When you use the app:</p>
-                <ul>
-                    <li>Your music files remain on your device and are not uploaded to our servers.</li>
-                    <li>We do not sell your personal information.</li>
-                    <li>You are responsible for the content you choose to play through the application.</li>
-                </ul>
-            </section>
+        <section id="local">
+          <h2><span class="num">03</span>What stays on your device</h2>
+          <p>
+            Playlists, favorites, playback preferences, download records, and Offline Space
+            audio/cover files live primarily on your phone. We do not upload your downloaded
+            music library to our servers.
+          </p>
+          <ul>
+            <li>Removing items in the app, clearing app data, or uninstalling Aurora deletes local copies under normal OS behavior.</li>
+            <li>You remain responsible for having the right to store and play any offline content.</li>
+          </ul>
+        </section>
 
-            <section>
-                <h2>4. Third-Party Services & Data Collection</h2>
-                <p>To improve our service, we may use third-party service providers that may process limited data:</p>
-                <ul>
-                    <li><strong>App diagnostics and analytics services:</strong> Used to understand app stability, performance, and usage patterns.</li>
-                    <li><strong>Network service providers:</strong> Used only when optional online features are enabled.</li>
-                </ul>
-                <p>These services may process information such as your device model, OS version, app usage statistics, and network request metadata in accordance with their own privacy policies.</p>
-            </section>
+        <section id="online">
+          <h2><span class="num">04</span>Online discovery & imports</h2>
+          <p>
+            Searching, browsing, streaming, fetching lyrics, loading remote configuration,
+            or importing a playlist link (for example from supported platforms such as
+            YouTube or Spotify) requires network requests. Those requests may include
+            query text, track or playlist identifiers, and the URLs you submit for import.
+          </p>
+          <p>
+            Third-party platforms operate under their own terms. Aurora does not control
+            their catalogs, availability, or policies.
+          </p>
+        </section>
 
-            <section>
-                <h2>5. Data Security</h2>
-                <p>We take data security seriously. Offline Music processes most data locally on your device. Any network requests are transmitted via encrypted secure protocols (HTTPS/TLS) where applicable. Please note that while we strive to protect your information, no transmission over the internet can be guaranteed as 100% secure.</p>
-            </section>
+        <section id="partners">
+          <h2><span class="num">05</span>Service partners</h2>
+          <p>Limited processing may occur through providers that help deliver the product:</p>
+          <ul>
+            <li><strong>Analytics / diagnostics</strong> — to improve reliability and understand how features are used.</li>
+            <li><strong>Music & config APIs</strong> — to return search results, playback links, lyrics, and remote settings.</li>
+          </ul>
+          <p>Partners receive only what is needed to perform their role and apply their own privacy statements.</p>
+        </section>
 
-            <section>
-                <h2>6. Children's Privacy</h2>
-                <p>Offline Music is not intended for children under the age of 13. We do not knowingly collect information from children under 13. If you believe we have inadvertently processed such information, please contact us immediately.</p>
-            </section>
+        <section id="security">
+          <h2><span class="num">06</span>Security & retention</h2>
+          <p>
+            We aim to protect in-transit data with encrypted connections (HTTPS/TLS) where applicable.
+            Local listening data remains on-device. No system is perfectly secure, and we cannot
+            promise absolute protection against every risk.
+          </p>
+          <p>
+            Analytics or server logs, if created, are kept only as long as reasonably useful for
+            the purposes in this policy.
+          </p>
+        </section>
 
-            <section>
-                <h2>7. Your Rights and Choices</h2>
-                <p>You have the following rights:</p>
-                <ul>
-                    <li><strong>Stop Data Transmission:</strong> You can limit future data interaction by uninstalling the application.</li>
-                    <li><strong>Contact Us:</strong> For any privacy-related questions, you can reach out to us directly.</li>
-                </ul>
-            </section>
+        <section id="children">
+          <h2><span class="num">07</span>Children</h2>
+          <p>
+            Aurora is not directed at children under 13. We do not knowingly collect personal
+            information from them. If you think this has happened, contact us and we will
+            take appropriate steps.
+          </p>
+        </section>
 
-            <section>
-                <h2>8. Contact Us</h2>
-                <p>If you have any questions, concerns, or suggestions regarding this Privacy Policy, please contact us:</p>
-                <p>Developer: Offline Music</p>
-                <p>Email: <a href="mailto:790338345@qq.com">790338345@qq.com</a></p>
-            </section>
-        </main>
+        <section id="choices">
+          <h2><span class="num">08</span>Your choices</h2>
+          <ul>
+            <li>Delete offline downloads, playlists, or favorites inside the app.</li>
+            <li>Stop further processing by uninstalling Aurora and clearing app data.</li>
+            <li>Email us with privacy questions or requests where applicable law provides additional rights.</li>
+          </ul>
+          <p>We may revise this page periodically and will update the effective date when we do.</p>
+        </section>
 
-        <footer>
-            <p>&copy; 2026 Offline Music. All rights reserved.</p>
-        </footer>
+        <section id="contact">
+          <h2><span class="num">09</span>Contact</h2>
+          <p>Questions about this Privacy Policy:</p>
+          <p>
+            Aurora<br>
+            Email: <a href="mailto:tunemusic@163.com">tunemusic@163.com</a>
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <span>© 2026 Aurora</span>
+        <span><a href="terms.html">Read the Terms of Service</a></span>
+      </footer>
     </div>
+  </div>
 </body>
-
 </html>
