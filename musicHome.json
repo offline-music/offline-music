@@ -4,7 +4,7 @@
   "error": "成功",
   "data": [
     {
-      "title": "Genres",
+      "title": "Featured",
       "style_type": "square_card",
       "count": 5,
       "items": [
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "title": "Vibes",
+      "title": "Discover",
       "style_type": "list",
       "count": 35,
       "items": [
