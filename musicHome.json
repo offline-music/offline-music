@@ -4,73 +4,6 @@
   "error": "成功",
   "data": [
     {
-      "title": "Featured",
-      "style_type": "square_card",
-      "count": 5,
-      "items": [
-        {
-          "title": "Evening Fall Piano",
-          "artists": "Kevin MacLeod",
-          "videoId": "evening-fall-piano",
-          "playLink": "https://offline-music.github.io/offline-music/music/evening-fall-piano.mp3",
-          "thumbnailUrl": "https://offline-music.github.io/offline-music/music/evening-fall-piano.jpg",
-          "isPlaylist": false,
-          "playCount": 60445,
-          "type": "music",
-          "duration": 165,
-          "fileSize": 5397796
-        },
-        {
-          "title": "Gymnopedie No. 1",
-          "artists": "Kevin MacLeod",
-          "videoId": "gymnopedie-no-1",
-          "playLink": "https://offline-music.github.io/offline-music/music/gymnopedie-no-1.mp3",
-          "thumbnailUrl": "https://offline-music.github.io/offline-music/music/gymnopedie-no-1.jpg",
-          "isPlaylist": false,
-          "playCount": 37772,
-          "type": "music",
-          "duration": 187,
-          "fileSize": 7487656
-        },
-        {
-          "title": "Dreamy Flashback",
-          "artists": "Kevin MacLeod",
-          "videoId": "dreamy-flashback",
-          "playLink": "https://offline-music.github.io/offline-music/music/dreamy-flashback.mp3",
-          "thumbnailUrl": "https://offline-music.github.io/offline-music/music/dreamy-flashback.jpg",
-          "isPlaylist": false,
-          "playCount": 69750,
-          "type": "music",
-          "duration": 127,
-          "fileSize": 5170799
-        },
-        {
-          "title": "Meditation Impromptu",
-          "artists": "Kevin MacLeod",
-          "videoId": "meditation-impromptu-01",
-          "playLink": "https://offline-music.github.io/offline-music/music/meditation-impromptu-01.mp3",
-          "thumbnailUrl": "https://offline-music.github.io/offline-music/music/meditation-impromptu-01.jpg",
-          "isPlaylist": false,
-          "playCount": 24328,
-          "type": "music",
-          "duration": 213,
-          "fileSize": 7042622
-        },
-        {
-          "title": "Blue Feather",
-          "artists": "Kevin MacLeod",
-          "videoId": "blue-feather",
-          "playLink": "https://offline-music.github.io/offline-music/music/blue-feather.mp3",
-          "thumbnailUrl": "https://offline-music.github.io/offline-music/music/blue-feather.jpg",
-          "isPlaylist": false,
-          "playCount": 27494,
-          "type": "music",
-          "duration": 278,
-          "fileSize": 11248061
-        }
-      ]
-    },
-    {
       "title": "Discover",
       "style_type": "list",
       "count": 35,
@@ -494,6 +427,73 @@
           "type": "music",
           "duration": 156,
           "fileSize": 2587456
+        }
+      ]
+    },
+    {
+      "title": "Featured",
+      "style_type": "square_card",
+      "count": 5,
+      "items": [
+        {
+          "title": "Evening Fall Piano",
+          "artists": "Kevin MacLeod",
+          "videoId": "evening-fall-piano",
+          "playLink": "https://offline-music.github.io/offline-music/music/evening-fall-piano.mp3",
+          "thumbnailUrl": "https://offline-music.github.io/offline-music/music/evening-fall-piano.jpg",
+          "isPlaylist": false,
+          "playCount": 60445,
+          "type": "music",
+          "duration": 165,
+          "fileSize": 5397796
+        },
+        {
+          "title": "Gymnopedie No. 1",
+          "artists": "Kevin MacLeod",
+          "videoId": "gymnopedie-no-1",
+          "playLink": "https://offline-music.github.io/offline-music/music/gymnopedie-no-1.mp3",
+          "thumbnailUrl": "https://offline-music.github.io/offline-music/music/gymnopedie-no-1.jpg",
+          "isPlaylist": false,
+          "playCount": 37772,
+          "type": "music",
+          "duration": 187,
+          "fileSize": 7487656
+        },
+        {
+          "title": "Dreamy Flashback",
+          "artists": "Kevin MacLeod",
+          "videoId": "dreamy-flashback",
+          "playLink": "https://offline-music.github.io/offline-music/music/dreamy-flashback.mp3",
+          "thumbnailUrl": "https://offline-music.github.io/offline-music/music/dreamy-flashback.jpg",
+          "isPlaylist": false,
+          "playCount": 69750,
+          "type": "music",
+          "duration": 127,
+          "fileSize": 5170799
+        },
+        {
+          "title": "Meditation Impromptu",
+          "artists": "Kevin MacLeod",
+          "videoId": "meditation-impromptu-01",
+          "playLink": "https://offline-music.github.io/offline-music/music/meditation-impromptu-01.mp3",
+          "thumbnailUrl": "https://offline-music.github.io/offline-music/music/meditation-impromptu-01.jpg",
+          "isPlaylist": false,
+          "playCount": 24328,
+          "type": "music",
+          "duration": 213,
+          "fileSize": 7042622
+        },
+        {
+          "title": "Blue Feather",
+          "artists": "Kevin MacLeod",
+          "videoId": "blue-feather",
+          "playLink": "https://offline-music.github.io/offline-music/music/blue-feather.mp3",
+          "thumbnailUrl": "https://offline-music.github.io/offline-music/music/blue-feather.jpg",
+          "isPlaylist": false,
+          "playCount": 27494,
+          "type": "music",
+          "duration": 278,
+          "fileSize": 11248061
         }
       ]
     }
