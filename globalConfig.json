@@ -3,7 +3,7 @@
   "msg": "SUCCESS",
   "error": "成功",
   "data": {
-    "currentVersion": "0.9",
+    "currentVersion": "0.9.1",
     "playListImportSupport": "YouTube",
     "spPlayListImportSupport": "Spotify"
   }
