@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · Vora Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #12141a;
+      --muted: #5c6570;
+      --paper: #f4f7f5;
+      --panel: #ffffff;
+      --line: #d7e0da;
+      --accent: #ff5a7a;
+      --accent-soft: #ffe8ee;
+      --accent-deep: #e04565;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Manrope", system-ui, sans-serif;
+      background:
+        radial-gradient(900px 420px at 8% -10%, rgba(255, 90, 122, 0.14), transparent 60%),
+        radial-gradient(700px 360px at 100% 0%, rgba(18, 20, 26, 0.04), transparent 55%),
+        var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    a { color: var(--accent-deep); text-underline-offset: 3px; }
+    a:hover { color: var(--accent); }
+    .shell {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 2rem;
+    }
+    .side {
+      position: sticky;
+      top: 1.5rem;
+      align-self: start;
+    }
+    .brand {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+    }
+    .side-meta {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      padding: 1rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+    .nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.92rem;
+      padding: 0.35rem 0.55rem;
+      border-radius: 8px;
+    }
+    .nav a:hover,
+    .nav a.active {
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+    }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 2.2rem 2rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 12px 40px rgba(18, 20, 26, 0.04);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+      background: var(--accent-soft);
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.85rem;
+    }
+    .lede {
+      max-width: 58ch;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .doc {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 0.5rem 0;
+      overflow: hidden;
+    }
+    section {
+      padding: 1.6rem 2rem;
+      border-bottom: 1px solid var(--line);
+    }
+    section:last-child { border-bottom: none; }
+    h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+      display: flex;
+      gap: 0.7rem;
+      align-items: baseline;
+    }
+    h2 .num {
+      color: var(--accent);
+      font-family: "Manrope", sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      min-width: 1.8rem;
+    }
+    p { color: var(--muted); margin-bottom: 0.9rem; }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      margin: 0.4rem 0 0.9rem;
+      padding-left: 1.15rem;
+      color: var(--muted);
+    }
+    li { margin: 0.35rem 0; }
+    li strong { color: var(--ink); font-weight: 600; }
+    .callout {
+      margin-top: 0.9rem;
+      padding: 0.95rem 1rem;
+      border-left: 3px solid var(--accent);
+      background: var(--accent-soft);
+      border-radius: 0 12px 12px 0;
+      color: var(--ink);
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 860px) {
+      .shell { grid-template-columns: 1fr; }
+      .side { position: static; }
+      .nav { flex-direction: row; flex-wrap: wrap; }
+      .hero, section { padding-left: 1.25rem; padding-right: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="side">
+      <div class="brand">Vora Music</div>
+      <p class="side-meta">Legal · Privacy</p>
+      <nav class="nav" aria-label="On this page">
+        <a href="#scope">Scope</a>
+        <a href="#data">What we process</a>
+        <a href="#local">On-device data</a>
+        <a href="#online">Online features</a>
+        <a href="#partners">Service partners</a>
+        <a href="#security">Security</a>
+        <a href="#children">Children</a>
+        <a href="#choices">Your choices</a>
+        <a href="#contact">Contact</a>
+        <a href="terms.html">Terms of Service →</a>
+      </nav>
+    </aside>
+
+    <div>
+      <header class="hero">
+        <div class="eyebrow">Effective · Aug 11, 2026</div>
+        <h1>Privacy Policy</h1>
+        <p class="lede">
+          This page explains how Vora Music handles information while you discover music,
+          stream tracks, manage playlists, and keep songs in Offline Space.
+        </p>
+      </header>
+
+      <main class="doc">
+        <section id="scope">
+          <h2><span class="num">01</span>Scope of this policy</h2>
+          <p>
+            Vora Music is an iOS music app for browsing and searching songs online,
+            streaming playback, building playlists and favorites, importing playlists
+            from supported platforms, and saving tracks for offline listening.
+          </p>
+          <p>
+            Main features work without creating an account. By continuing to use Vora Music,
+            you acknowledge the practices described here.
+          </p>
+        </section>
+
+        <section id="data">
+          <h2><span class="num">02</span>What we process</h2>
+          <p>We keep collection limited. Depending on how you use the app, we may process:</p>
+          <ul>
+            <li><strong>Technical signals</strong> — device type, OS version, app version, language, and basic performance or crash indicators.</li>
+            <li><strong>Analytics events</strong> — aggregated usage events in release builds (for example via Firebase Analytics) to understand stability and feature adoption.</li>
+            <li><strong>Request metadata</strong> — when online features run, standard network details needed to fulfill search, stream, lyrics, config, or import requests.</li>
+            <li><strong>Feedback you send</strong> — message text and lightweight device context if you reach out through in-app feedback.</li>
+          </ul>
+          <div class="callout">
+            We do not ask for payment card data, contacts, precise location, camera, or microphone access for core playback.
+          </div>
+        </section>
+
+        <section id="local">
+          <h2><span class="num">03</span>What stays on your device</h2>
+          <p>
+            Playlists, favorites, playback preferences, download records, and Offline Space
+            audio/cover files live primarily on your phone. We do not upload your downloaded
+            music library to our servers.
+          </p>
+          <ul>
+            <li>Removing items in the app, clearing app data, or uninstalling Vora Music deletes local copies under normal OS behavior.</li>
+            <li>You remain responsible for having the right to store and play any offline content.</li>
+          </ul>
+        </section>
+
+        <section id="online">
+          <h2><span class="num">04</span>Online discovery & imports</h2>
+          <p>
+            Searching, browsing, streaming, fetching lyrics, loading remote configuration,
+            or importing a playlist link (for example from supported platforms such as
+            YouTube or Spotify) requires network requests. Those requests may include
+            query text, track or playlist identifiers, and the URLs you submit for import.
+          </p>
+          <p>
+            Third-party platforms operate under their own terms. Vora Music does not control
+            their catalogs, availability, or policies.
+          </p>
+        </section>
+
+        <section id="partners">
+          <h2><span class="num">05</span>Service partners</h2>
+          <p>Limited processing may occur through providers that help deliver the product:</p>
+          <ul>
+            <li><strong>Analytics / diagnostics</strong> — to improve reliability and understand how features are used.</li>
+            <li><strong>Music & config APIs</strong> — to return search results, playback links, lyrics, and remote settings.</li>
+          </ul>
+          <p>Partners receive only what is needed to perform their role and apply their own privacy statements.</p>
+        </section>
+
+        <section id="security">
+          <h2><span class="num">06</span>Security & retention</h2>
+          <p>
+            We aim to protect in-transit data with encrypted connections (HTTPS/TLS) where applicable.
+            Local listening data remains on-device. No system is perfectly secure, and we cannot
+            promise absolute protection against every risk.
+          </p>
+          <p>
+            Analytics or server logs, if created, are kept only as long as reasonably useful for
+            the purposes in this policy.
+          </p>
+        </section>
+
+        <section id="children">
+          <h2><span class="num">07</span>Children</h2>
+          <p>
+            Vora Music is not directed at children under 13. We do not knowingly collect personal
+            information from them. If you think this has happened, contact us and we will
+            take appropriate steps.
+          </p>
+        </section>
+
+        <section id="choices">
+          <h2><span class="num">08</span>Your choices</h2>
+          <ul>
+            <li>Delete offline downloads, playlists, or favorites inside the app.</li>
+            <li>Stop further processing by uninstalling Vora Music and clearing app data.</li>
+            <li>Email us with privacy questions or requests where applicable law provides additional rights.</li>
+          </ul>
+          <p>We may revise this page periodically and will update the effective date when we do.</p>
+        </section>
+
+        <section id="contact">
+          <h2><span class="num">09</span>Contact</h2>
+          <p>Questions about this Privacy Policy:</p>
+          <p>
+            Vora Music<br>
+            Email: <a href="mailto:tunemusic@163.com">tunemusic@163.com</a>
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <span>© 2026 Vora Music</span>
+        <span><a href="terms.html">Read the Terms of Service</a></span>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
